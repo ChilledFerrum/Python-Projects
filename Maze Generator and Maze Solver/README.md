@@ -15,3 +15,6 @@ The user can modify the following parameters based on their needs. The parameter
  - MazeSolver_TickSpeed = <The tick speed of the maze solving algorithms (Is Integer)> <br/>
  - use_BFS_Maze_Solver = <Write False to use the Iterative-Backtracking or DFS algorithm as the maze solver or True to use the BFS Maze Solver algorithm as the maze solver> <br/>
  - use_x_MazeGeneration_Algorithm = <Choose one of the 3 maze generation algorithms based on the below dictionary. (Read Comments if needed) (Is Integer)> <br/>
+
+  
+  ![](https://github.com/ChilledFerrum/Python/imgs/MazeGeneratorandMazeSolverBFSgen.gif)
