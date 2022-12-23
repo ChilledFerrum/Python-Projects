@@ -25,17 +25,17 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 SOFTWARE. 
 """
 
-rows = 20
-cols = 20
+rows = 15
+cols = 15
 cellWidth = 30
 TrackerSize = cellWidth / math.log(rows * cols)  # I like My Math, it gives me an "Exponential crisis"
-FPS = 100
-MazeSolver_TickSpeed = 80
+FPS = 120
+MazeSolver_TickSpeed = 50
 
 # By selecting False the default Maze Solving algorithm is Iterative Backtracking aka DFS.
 # By selecting True the BFS algorithm will pause
-use_BFS_Maze_Solver = True
-use_x_MazeGeneration_Algorithm = 3
+use_BFS_Maze_Solver = False
+use_x_MazeGeneration_Algorithm = 1
 MazeGeneration_Algorithm = {
     # (BFS based maze generation, results in a more complex maze)
     1: "Breadth-First_Search",  # Maze Generation using queues and random neighbor selections
@@ -68,8 +68,6 @@ class Canvas:
     def __init__(self):
         self.running = True
         self.fpsClock = pygame.time.Clock()
-
-        self.FPS = FPS
 
         self.ColorGradient = 0
 
@@ -150,11 +148,12 @@ class Canvas:
 
             if not self.MyMaze.MazeSolved:
                 if use_BFS_Maze_Solver:
+                    # self.fpsClock.tick(MazeSolver_TickSpeed)
                     self.BreadthFirstSearch()
                     self.MyMaze.finalPath = self.getBFSPath()
                     self.drawMaze()
                 else:
-                    self.fpsClock.tick(MazeSolver_TickSpeed)
+                    # self.fpsClock.tick(MazeSolver_TickSpeed)
                     # Use Random neighbor Indicator with Backtracking
                     self.MyMaze.solveMazeRandomNeighbor()
                     self.pathIndicator()
@@ -316,7 +315,7 @@ class Canvas:
             Neighbors = self.Graph.getNode(current.location).Neighbors
             if len(Neighbors) > 0:
                 for neighbor in Neighbors.keys():
-                    self.fpsClock.tick(MazeSolver_TickSpeed)
+                    # self.fpsClock.tick(MazeSolver_TickSpeed)
                     self.pathIndicator()
                     if not self.Graph.getNode(neighbor).visited:
                         self.Graph.getNode(neighbor).visited = True
@@ -379,8 +378,6 @@ class Canvas:
         y = math.fmod(75, self.iconSize)
         x = self.iconSize - 25
 
-        self.fpsClock.tick(self.FPS)
-
         self.MyMaze.createMaze()
 
         Gui_Size = (4, 100)
@@ -413,6 +410,11 @@ class Canvas:
             else:
                 self.screen.blit(self.ExitImg, (CanvasSize[0] / 2 - 25, CanvasSize[1] - 75))
             pygame.display.update()
+
+            if self.MyMaze.isMazeComplete():
+                self.fpsClock.tick(MazeSolver_TickSpeed)
+            else:
+                self.fpsClock.tick(FPS)
 
     def __del__(self):
         print("CLOSING MAZE")
