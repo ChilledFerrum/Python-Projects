@@ -16,7 +16,18 @@ The user can modify the following parameters based on their needs. The parameter
  - use_BFS_Maze_Solver = <Write False to use the Iterative-Backtracking or DFS algorithm as the maze solver or True to use the BFS Maze Solver algorithm as the maze solver> <br/>
  - use_x_MazeGeneration_Algorithm = <Choose one of the 3 maze generation algorithms based on the below dictionary. (Read Comments if needed) (Is Integer)> <br/>
 
- 
+
+### Requirements <br/>
+```
+pip, pygame, python
+```
+
+### How to Run
+```
+> git clone 
+> pip install pygame
+> 
+```
 ### Maze Generation using Disjoint-sets
 <img src="https://github.com/ChilledFerrum/Python/blob/8a5016be481140c9de2851b19b86a2c5663a3a7a/imgs/MazeGeneratorandMazeSolverDisjointSetsgen.gif" width="535" height="300"/> <br/>
 ### Maze Generation using DFS (Depth-First Search) 
