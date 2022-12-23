@@ -8,10 +8,10 @@
 <br/>
 **Parameters:** <br/>
 The user can modify the following parameters based on their needs. The parameters are located in the Canvas.py file <br/>
- - rows = # Number of rows in the Maze (is Integer) <br/>
- - cols = # Number of Colums in the Maze (is Integer) <br/>
- - cellWidth = # The width of each cell in the Maze (is Integer) (The resolution of the maze is as follows Width: cols*cellWidth, Height: rows*cellwidth + UIoffset) <br/>
- - FPS = # The tick speed of the maze generation algorithms (Is Integer) <br/>
- - MazeSolver_TickSpeed = # The tick speed of the maze solving algorithms (Is Integer) <br/>
- - use_BFS_Maze_Solver = # Write False to use the Iterative-Backtracking or DFS algorithm as the maze solver or True to use the BFS Maze Solver algorithm as the maze solver <br/>
- - use_x_MazeGeneration_Algorithm = # Choose one of the 3 maze generation algorithms based on the below dictionary. (Read Comments if needed) (Is Integer) <br/>
+ - rows = <Number of rows in the Maze (is Integer)> <br/>
+ - cols = <Number of Colums in the Maze (is Integer)> <br/>
+ - cellWidth = <The width of each cell in the Maze (is Integer) (The resolution of the maze is as follows Width: cols*cellWidth, Height: rows*cellwidth + UIoffset)> <br/>
+ - FPS = <The tick speed of the maze generation algorithms (Is Integer)> <br/>
+ - MazeSolver_TickSpeed = <The tick speed of the maze solving algorithms (Is Integer)> <br/>
+ - use_BFS_Maze_Solver = <Write False to use the Iterative-Backtracking or DFS algorithm as the maze solver or True to use the BFS Maze Solver algorithm as the maze solver> <br/>
+ - use_x_MazeGeneration_Algorithm = <Choose one of the 3 maze generation algorithms based on the below dictionary. (Read Comments if needed) (Is Integer)> <br/>
