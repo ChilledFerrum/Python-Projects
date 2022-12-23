@@ -1,8 +1,7 @@
 # Maze Generator using Pygame in Python Version (1.0)
 ### 3 maze generation algorithms & 2 maze solving algorithms
 
-**Description:** <br/>
-  This algorithm contains parameters that are available to the user. The parameters allow the user to change the output of the maze generation algorithm. It contains a total of 3 maze generation algorithms and 2 maze solving algorithms. The generation algorithms are Iterative-Backtracking or DFS, Breadth-First-Search and Disjoint-sets. The maze solving algorithms are based on the Iterative-backtracking or DFS algorithm and the Breadth-First-Search algorithm. <br/>
+**Description:** <br/>This algorithm contains parameters that are available for the user to change. The parameters allow the user to change the output of the maze. It contains a total of 3 maze generation algorithms and 2 maze solving algorithms. The generation algorithms are, Iterative-Backtracking based on DFS, Breadth-First-Search and Disjoint-sets. The maze solving algorithms are based on the Iterative-backtracking or DFS algorithm and the Breadth-First-Search algorithm. <br/>
   Within the project every algorithm's changes are visualized using pygame. Most of the operations and functions are written in the Canvas.py and Maze.py files.
 <br/>
 <br/>
@@ -17,12 +16,12 @@ The user can modify the following parameters based on their needs. The parameter
  - use_x_MazeGeneration_Algorithm = <Choose one of the 3 maze generation algorithms based on the below dictionary. (Read Comments if needed) (Is Integer)> <br/>
 
 
-### Requirements <br/>
+### Requirements:
 ```
 pip, pygame, python
 ```
 
-### How to Compile the code
+### How to Compile the code:
 ```
 > git clone 
 > pip install pygame
