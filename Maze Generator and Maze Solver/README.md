@@ -22,11 +22,12 @@ The user can modify the following parameters based on their needs. The parameter
 pip, pygame, python
 ```
 
-### How to Run
+### How to Compile the code
 ```
 > git clone 
 > pip install pygame
-> 
+> cd Maze Generator and Maze Solver
+> python main.py
 ```
 ### Maze Generation using Disjoint-sets
 <img src="https://github.com/ChilledFerrum/Python/blob/8a5016be481140c9de2851b19b86a2c5663a3a7a/imgs/MazeGeneratorandMazeSolverDisjointSetsgen.gif" width="535" height="300"/> <br/>
