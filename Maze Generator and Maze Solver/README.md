@@ -2,7 +2,7 @@
 ### 3 maze generation algorithms & 2 maze solving algorithms
 
 **Description:** <br/>
-  This algorithm contains parameters that are available to the user in which it allows the user to change the output of the maze generation algorithm. It contains a total of 3 maze generation algorithms and 2 maze solving algorithms. The generation algorithms are Iterative-Backtracking or DFS, Breadth-First-Search and Disjoint-sets. The maze solving algorithms are based on the Iterative-backtracking or DFS algorithm and the Breadth-First-Search algorithm. <br/>
+  This algorithm contains parameters that are available to the user. The parameters allow the user to change the output of the maze generation algorithm. It contains a total of 3 maze generation algorithms and 2 maze solving algorithms. The generation algorithms are Iterative-Backtracking or DFS, Breadth-First-Search and Disjoint-sets. The maze solving algorithms are based on the Iterative-backtracking or DFS algorithm and the Breadth-First-Search algorithm. <br/>
   Within the project every algorithm's changes are visualized using pygame. Most of the operations and functions are written in the Canvas.py and Maze.py files.
 <br/>
 <br/>
