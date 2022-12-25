@@ -30,10 +30,10 @@ pip, pygame, python
 ```
 ## Maze Generation Algorithms <br/>
 ### Maze Generation using Disjoint-sets
-<img src="https://github.com/ChilledFerrum/Python/blob/8a5016be481140c9de2851b19b86a2c5663a3a7a/imgs/MazeGeneratorandMazeSolverDisjointSetsgen.gif" width="535" height="300"/> <br/>
+<img src="https://github.com/ChilledFerrum/Python/blob/8a5016be481140c9de2851b19b86a2c5663a3a7a/Assets/Maze Generator and Maze Solver/MazeGeneratorandMazeSolverDisjointSetsgen.gif" width="535" height="300"/> <br/>
 ### Maze Generation using DFS (Depth-First Search) 
-<img src="https://github.com/ChilledFerrum/Python/blob/8a5016be481140c9de2851b19b86a2c5663a3a7a/imgs/MazeGeneratorandMazeSolverDFSgen.gif" width="535" height="300"/> <br/>
+<img src="https://github.com/ChilledFerrum/Python/blob/8a5016be481140c9de2851b19b86a2c5663a3a7a/Assets/Maze Generator and Maze Solver/MazeGeneratorandMazeSolverDFSgen.gif" width="535" height="300"/> <br/>
 ### Maze Generation using BFS (Breadth-First Search)
-<img src="https://github.com/ChilledFerrum/Python/blob/8a5016be481140c9de2851b19b86a2c5663a3a7a/imgs/MazeGeneratorandMazeSolverBFSgen.gif" width="535" height="300"/> <br/>
+<img src="https://github.com/ChilledFerrum/Python/blob/8a5016be481140c9de2851b19b86a2c5663a3a7a/Assets/Maze Generator and Maze Solver/MazeGeneratorandMazeSolverBFSgen.gif" width="535" height="300"/> <br/>
   
   
