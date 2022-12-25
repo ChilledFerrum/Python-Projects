@@ -4,7 +4,7 @@
 ## Description:
 The purpose of this algorithm is to visualize the groundtruth images given by the ExDark dataset. It embeds the groundtruth information from the '.txt' files into the images and allows the user to visualize the groundtruth images. It works by drawing bounding-boxes around the classified objects within the dataset.<br/><br/>
 This algorithm is supported for the ExDark dataset and was primarily created for applied research in my thesis and research paper.
-
+<img src="https://github.com/ChilledFerrum/Python/blob/6b309f2ff83276dc385bd90a09b1fb0d56ec5eb6/Create%20Groundtruth%20Images/Assets/Exdark.gif"/>
 ## Requirements:
 #### OpenCV, ExDark dataset
 #### Recommended file tree 
