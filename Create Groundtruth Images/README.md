@@ -1,6 +1,6 @@
 # Groundtruth annotation algorithm for the ExDark dataset
 ### This algorithm is supported for the ExDark dataset and was primarily created for applied research in my thesis and research.
-<!-- [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/https://github.com/cs-chan/Exclusively-Dark-Image-Dataset)](https://github.com/cs-chan/Exclusively-Dark-Image-Dataset) -->
+![PWC](https://img.shields.io/badge/Dataset-ExDark%20dataset-red?url=https://github.com/cs-chan/Exclusively-Dark-Image-Dataset&url=http://youtube.com&logo=Github)
 
 ## Description:
 This algorithm embeds the groundtruth information from the '.txt' files into the images and allows the user to visualize the groundtruth images given by the ExDark dataset.
