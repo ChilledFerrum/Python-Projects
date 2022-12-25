@@ -1,7 +1,12 @@
 # Groundtruth annotation algorithm for the ExDark dataset
+<<<<<<< HEAD
 [![PWC](https://img.shields.io/badge/Dataset-ExDark%20Repository-brightgreen?url=https://github.com/cs-chan/Exclusively-Dark-Image-Dataset&logo=Github)](https://github.com/cs-chan/Exclusively-Dark-Image-Dataset)
 [![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white)](https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html) <br/>
 This algorithm is supported for the ExDark dataset and was primarily created for applied research in my thesis and research paper.
+=======
+### This algorithm is supported for the ExDark dataset and was primarily created for applied research in my thesis and research.
+![PWC](https://img.shields.io/badge/Dataset-ExDark%20dataset-red?url=https://github.com/cs-chan/Exclusively-Dark-Image-Dataset&url=http://youtube.com&logo=Github)
+>>>>>>> 628626e447304b97c3f0bac51adc5a91d7567145
 
 ## Description:
 The purpose of this algorithm is to visualize the groundtruth images given by the ExDark dataset. It embeds the groundtruth information from the '.txt' files into the images and allows the user to visualize the groundtruth images. It works by drawing bounding-boxes around the classified objects within the dataset.<br/><br/>
@@ -10,6 +15,7 @@ This algorithm is supported for the ExDark dataset and was primarily created for
 ## Requirements:
 #### OpenCV, ExDark dataset
 #### Recommended file tree 
+<<<<<<< HEAD
 
 - src
 > - main.py
@@ -32,3 +38,5 @@ By having the correct setup as seen above and running main.py, the program will 
   doi={https://doi.org/10.1016/j.cviu.2018.10.010}
 }
 ```
+=======
+>>>>>>> 628626e447304b97c3f0bac51adc5a91d7567145
