@@ -7,7 +7,7 @@ The program is finished but it is still unpolished, if any issue arises feel fre
 <br/>
 <br/>
 **Parameters:** <br/>
-The user can modify the following parameters based on their needs. The parameters are located in the Canvas.py file <br/>
+The user can modify the following parameters based on their needs. The parameters are located in the Canvas.py file
  - rows = <Number of rows in the Maze (is Integer)> <br/>
  - cols = <Number of Colums in the Maze (is Integer)> <br/>
  - cellWidth = <The width of each cell in the Maze (is Integer) (The resolution of the maze is as follows Width: cols*cellWidth, Height: rows*cellwidth + UIoffset)> <br/>
