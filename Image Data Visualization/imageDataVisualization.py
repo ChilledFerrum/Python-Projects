@@ -43,7 +43,7 @@ for fileName in files:
     fig = plt.figure()
     plot = plt.contour(X, Y, rotated[:,:, 0], 50)
 
-
+    plt.savefig(outputDirectory + "contours/" + "Contour_" + fileName)
     # ================================== CREATE 3D IMAGE PLOT FIGURE ==================================
     fig = plt.figure(3)
 
@@ -77,7 +77,7 @@ for fileName in files:
     grad = cv.addWeighted(abs_grad_x, 0.5, abs_grad_y, 0.5, 0)
 
     cv.waitKey(0)
-    cv.imwrite(outputDirectory+"contours/"+"Contours_" + fileName, grad)
+    cv.imwrite(outputDirectory+"sobel/"+"Sobel_" + fileName, grad)
 
     # ================================== HISTOGRAMS OF IMAGE  ==================================
     plt.figure()
