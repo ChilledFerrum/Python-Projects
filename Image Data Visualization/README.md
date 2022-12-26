@@ -5,7 +5,24 @@
 ### Description:
 This algorithm uses various data visualization techniques to visualize an image's light level, the edge differences as well as histograms. <br/>
 
-<img src="https://github.com/ChilledFerrum/Python/blob/49acd0aed8e7d6dace0ae3a1a959b0c7e68e8a78/Image%20Data%20Visualization/input/2015_02453.jpg"> <img src="https://github.com/ChilledFerrum/Python/blob/49acd0aed8e7d6dace0ae3a1a959b0c7e68e8a78/Image%20Data%20Visualization/output/3D/3D_2015_02453.jpg">
+<table>
+<th>Input</th><th>Output</th>
+
+<tr>
+<td><img src="https://github.com/ChilledFerrum/Python/blob/49acd0aed8e7d6dace0ae3a1a959b0c7e68e8a78/Image%20Data%20Visualization/input/2015_02453.jpg" width="385" height="289"></td>
+<td><strong>3D Map</strong><br/><img src="https://github.com/ChilledFerrum/Python/blob/49acd0aed8e7d6dace0ae3a1a959b0c7e68e8a78/Image%20Data%20Visualization/output/3D/3D_2015_02453.jpg" width="385" height="289"></td>
+</tr>
+
+<tr>
+<td><img src="https://github.com/ChilledFerrum/Python/blob/6b59b4673d74c2562374d4e37c4975bed71c2570/Image%20Data%20Visualization/input/2015_05757.jpg" width="375" height="400"></td>
+<td><strong>Contours</strong><br/><img src="https://github.com/ChilledFerrum/Python/blob/6b59b4673d74c2562374d4e37c4975bed71c2570/Image%20Data%20Visualization/output/contours/Contour_2015_05757.jpg" width="375" height="400"></td>
+</tr>
+
+<tr>
+<td><img src="https://github.com/ChilledFerrum/Python/blob/6b59b4673d74c2562374d4e37c4975bed71c2570/Image%20Data%20Visualization/input/IMG_4813.jpg" width="375" height="289"></td>
+<td><strong>Sobel Derivatives</strong><br/><img src="https://github.com/ChilledFerrum/Python/blob/6b59b4673d74c2562374d4e37c4975bed71c2570/Image%20Data%20Visualization/output/sobel/Sobel_IMG_4813.jpg" width="375" height="289"></td>
+</tr>
+</table> <br/>
 
 ## Requirements:
 OpenCV, numpy, matplotlib, python
