@@ -5,6 +5,8 @@
 ### Description:
 This algorithm uses various data visualization techniques to visualize an image's light level, the edge differences as well as histograms. <br/>
 
+<img src="https://github.com/ChilledFerrum/Python/blob/49acd0aed8e7d6dace0ae3a1a959b0c7e68e8a78/Image%20Data%20Visualization/input/2015_02453.jpg"> <img src="https://github.com/ChilledFerrum/Python/blob/49acd0aed8e7d6dace0ae3a1a959b0c7e68e8a78/Image%20Data%20Visualization/output/3D/3D_2015_02453.jpg">
+
 ## Requirements:
 OpenCV, numpy, matplotlib, python
 
