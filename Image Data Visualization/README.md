@@ -11,6 +11,8 @@ This algorithm uses various data visualization techniques to visualize an image'
  - [x] 3D Image Graphing (On a top Down view)
  - [x] Image Color Channel Extraction
  - [x] Histogram Graphs for each Color Channel (RGB only)
+
+### Samples:
 <table>
 <th>Input</th><th>Output</th>
 <tr>
