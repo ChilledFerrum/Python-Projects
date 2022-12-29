@@ -4,7 +4,7 @@
 
 ### Description:
 This algorithm uses various data visualization techniques to visualize an image's light conditions and color variation differences. <br/>
-This algorithm was originally created for the use of image data visualization primarily for my thesis, but I'm also leaving it as open source for other people to explore and use. No Citations are required since the code is easily implementable
+This algorithm was originally created for the use of image data visualization primarily for my thesis, but I'm also leaving it as open source for other people to explore and use. No citations are required, although it would be highly appreciated if the tool was citated in the references for others to use.
 
 ### Features:
  - [x] Sobel Derivatives
@@ -44,4 +44,22 @@ OpenCV, numpy, matplotlib, python
 Check out the OpenCV website to setup the package into your interpreter and run the program.
 ```
 > python imageDataVisualization.py
+```
+
+### Optional Citation
+
+#### BibTex
+```
+@software{ImageDataVisualization,
+author = {Dimitrios Mpouziotas},
+title = {Various Image Data Visualization Methods using OpenCV \& Python},
+url = {https://github.com/ChilledFerrum/Python/tree/main/Image%20Data%20Visualization},
+year = {2022},
+month = {12}
+}
+```
+
+#### APA
+```
+Dimitrios M. (2022). Various Image Data Visualization Methods using OpenCV \& Python [Computer software]. https://github.com/ChilledFerrum/Python/tree/main/Image%20Data%20Visualization
 ```
