@@ -62,7 +62,7 @@ for fileName in files:
     ax.plot_surface(X[::-1], Y[::-1], imlab[::-1, ::-1, 0], cmap='jet')
     ax.view_init(azim=90, elev=90)
     plt.title("Top Down View of the 3D Image")
-    plt.savefig(outputDirectory+"3D/"+"3D_" +fileName)
+    plt.savefig(outputDirectory+"3D/"+"3D_" +fileName, bbox_inches="tight")
 
 
     # ================================== SOBEL DERIVATIVES OF IMAGE ==================================
