@@ -18,12 +18,12 @@ This algorithm was originally created for the use of image data visualization pr
 <th>Input</th><th>Output</th>
 <tr>
 <td><img src="https://github.com/ChilledFerrum/Python/blob/49acd0aed8e7d6dace0ae3a1a959b0c7e68e8a78/Image%20Data%20Visualization/input/2015_02453.jpg" width="385" height="289"></td>
-<td><strong>3D Map</strong><br/><img src="https://github.com/ChilledFerrum/Python/blob/49acd0aed8e7d6dace0ae3a1a959b0c7e68e8a78/Image%20Data%20Visualization/output/3D/3D_2015_02453.jpg" width="385" height="289"></td>
+<td><strong>3D Map</strong> (The image output is tighter and clearer)<br/><img src="https://github.com/ChilledFerrum/Python/blob/49acd0aed8e7d6dace0ae3a1a959b0c7e68e8a78/Image%20Data%20Visualization/output/3D/3D_2015_02453.jpg" width="385" height="289"></td>
 </tr>
 
 <tr>
 <td><img src="https://github.com/ChilledFerrum/Python/blob/6b59b4673d74c2562374d4e37c4975bed71c2570/Image%20Data%20Visualization/input/2015_05757.jpg" width="375" height="400"></td>
-<td><strong>Contours</strong><br/><img src="https://github.com/ChilledFerrum/Python/blob/6b59b4673d74c2562374d4e37c4975bed71c2570/Image%20Data%20Visualization/output/contours/Contour_2015_05757.jpg" width="375" height="400"></td>
+<td><strong>Contours</strong> (The real output does not contain the axis)<br/><img src="https://github.com/ChilledFerrum/Python/blob/6b59b4673d74c2562374d4e37c4975bed71c2570/Image%20Data%20Visualization/output/contours/Contour_2015_05757.jpg" width="375" height="400"></td>
 </tr>
 
 <tr>
