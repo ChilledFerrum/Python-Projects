@@ -1,6 +1,7 @@
 import cv2 as cv
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.artist as Artist
 import os
 
 
@@ -40,10 +41,15 @@ for fileName in files:
     X, Y = np.meshgrid(x, y)
     rotated = cv.rotate(image, cv.ROTATE_180)
     rotated = cv.flip(rotated, 1)
-    fig = plt.figure()
-    plot = plt.contour(X, Y, rotated[:,:, 0], 50)
 
-    plt.savefig(outputDirectory + "contours/" + "Contour_" + fileName)
+    fig = plt.figure()
+    plot = plt.contour(X, Y, rotated[:, :, 0], 50)
+    plt.axis('off')
+    ax = plt.gca()
+    ax.get_xaxis().set_visible(False)
+    ax.get_yaxis().set_visible(False)
+
+    plt.savefig(outputDirectory + "contours/" + "Contour_" + fileName, bbox_inches="tight", pad_inches=0)
     # ================================== CREATE 3D IMAGE PLOT FIGURE ==================================
     fig = plt.figure(3)
 
