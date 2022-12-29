@@ -18,7 +18,7 @@ This algorithm was originally created for the use of image data visualization pr
 <th>Input</th><th>Output</th>
 <tr>
 <td><img src="https://github.com/ChilledFerrum/Python/blob/49acd0aed8e7d6dace0ae3a1a959b0c7e68e8a78/Image%20Data%20Visualization/input/2015_02453.jpg" width="385" height="289"></td>
-<td><strong>3D Map</strong> (The image output is tighter and clearer)<br/><img src="https://github.com/ChilledFerrum/Python/blob/49acd0aed8e7d6dace0ae3a1a959b0c7e68e8a78/Image%20Data%20Visualization/output/3D/3D_2015_02453.jpg" width="385" height="289"></td>
+<td><strong>3D Map</strong> (The real image output is tighter and clearer)<br/><img src="https://github.com/ChilledFerrum/Python/blob/49acd0aed8e7d6dace0ae3a1a959b0c7e68e8a78/Image%20Data%20Visualization/output/3D/3D_2015_02453.jpg" width="385" height="289"></td>
 </tr>
 
 <tr>
