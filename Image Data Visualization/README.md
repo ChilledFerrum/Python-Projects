@@ -3,11 +3,19 @@
 
 
 ### Description:
-This algorithm uses various data visualization techniques to visualize an image's light level, the edge differences as well as histograms. <br/>
+This algorithm uses various data visualization techniques to visualize an image's light conditions and color variation differences. <br/>
+This algorithm was originally created for the use of image data visualization primarily for my thesis, but I'm also leaving it as open source for other people to explore and use. No citations are required, although it would be highly appreciated if the tool was citated in the references for others to use.
 
+### Features:
+ - [x] Sobel Derivatives
+ - [x] Contour Maps
+ - [x] 3D Image Graphing (On a top Down view)
+ - [x] Image Color Channel Extraction
+ - [x] Histogram Graphs for each Color Channel (RGB only)
+
+### Samples:
 <table>
 <th>Input</th><th>Output</th>
-
 <tr>
 <td><img src="https://github.com/ChilledFerrum/Python/blob/49acd0aed8e7d6dace0ae3a1a959b0c7e68e8a78/Image%20Data%20Visualization/input/2015_02453.jpg" width="385" height="289"></td>
 <td><strong>3D Map</strong><br/><img src="https://github.com/ChilledFerrum/Python/blob/49acd0aed8e7d6dace0ae3a1a959b0c7e68e8a78/Image%20Data%20Visualization/output/3D/3D_2015_02453.jpg" width="385" height="289"></td>
@@ -36,4 +44,22 @@ OpenCV, numpy, matplotlib, python
 Check out the OpenCV website to setup the package into your interpreter and run the program.
 ```
 > python imageDataVisualization.py
+```
+
+### Optional Citation
+
+#### BibTex
+```
+@software{ImageDataVisualization,
+author = {Dimitrios Mpouziotas},
+title = {Various Image Data Visualization Methods using OpenCV \& Python},
+url = {https://github.com/ChilledFerrum/Python/tree/main/Image%20Data%20Visualization},
+year = {2022},
+month = {12}
+}
+```
+
+#### APA
+```
+Dimitrios M. (2022). Various Image Data Visualization Methods using OpenCV \& Python [Computer software]. https://github.com/ChilledFerrum/Python/tree/main/Image%20Data%20Visualization
 ```
