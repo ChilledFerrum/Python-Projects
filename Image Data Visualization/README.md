@@ -4,7 +4,8 @@
 
 ### Description:
 This algorithm uses various data visualization techniques to visualize an image's light conditions and color variation differences. <br/>
-This algorithm was originally created for the use of image data visualization primarily for my thesis, but I'm also leaving it as open source for other people to explore and use. No citations are required, although it would be highly appreciated if the tool was citated in the references for others to use.
+This algorithm was originally created for the use of image data visualization primarily for my thesis, but I'm also leaving it as open source for other people to explore and use. No citations are required, although it would be highly appreciated if the tool was citated in the references for others to use. <br/>
+2 of the sample images are provided from the [ExDark dataset](https://github.com/cs-chan/Exclusively-Dark-Image-Dataset).
 
 ### Features:
  - [x] Sobel Derivatives
