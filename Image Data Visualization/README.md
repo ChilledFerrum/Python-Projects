@@ -44,10 +44,6 @@ If the matplotlib version is out-dated the project was compiled using 3.5.1
 > pip install pillow
 > python main.py
 ```
-Check out the OpenCV website to setup the package into your interpreter and run the program.
-```
-> python imageDataVisualization.py
-```
 
 ### Optional Citation
 
