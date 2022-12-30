@@ -15,7 +15,11 @@ for fileName in files:
     image = cv.imread(filepath, cv.IMREAD_UNCHANGED)
 
     # Get DPI data for correct Image Scaling
-    imagedpi = Image.open(filepath).info['dpi']
+    try:
+        imagedpi = Image.open(filepath).info['dpi']
+    except KeyError:
+        # Default DPI if image is jfif format
+        imagedpi = [72, 72]
 
     # Converts the Image into the L*a*b* Color formatted image
     imlab = cv.cvtColor(image, cv.COLOR_BGR2LAB)
