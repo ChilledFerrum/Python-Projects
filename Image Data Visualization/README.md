@@ -34,13 +34,15 @@ This algorithm was originally created for the use of image data visualization pr
 </table> <br/>
 
 ## Requirements:
-OpenCV, numpy, matplotlib, python
-
+pip, OpenCV, numpy, matplotlib, python, Pillow (Any version should be fine) <br/>
+If the matplotlib version is out-dated the project was compiled using 3.5.1
 
 ## Compile:
 ```
 > pip install numpy
 > pip install matplotlib
+> pip install pillow
+> python main.py
 ```
 Check out the OpenCV website to setup the package into your interpreter and run the program.
 ```
