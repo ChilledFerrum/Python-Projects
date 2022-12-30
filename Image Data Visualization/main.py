@@ -1,9 +1,8 @@
 import cv2 as cv
 import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib.artist as Artist
+from PIL import Image
 import os
-
 
 inputDirectory = "input/"
 outputDirectory = "output/"
@@ -12,9 +11,16 @@ files = os.listdir(inputDirectory)
 for fileName in files:
 
     filepath = inputDirectory + fileName
+
     image = cv.imread(filepath, cv.IMREAD_UNCHANGED)
+
+    # Get DPI data for correct Image Scaling
+    imagedpi = Image.open(filepath).info['dpi']
+
+    # Converts the Image into the L*a*b* Color formatted image
     imlab = cv.cvtColor(image, cv.COLOR_BGR2LAB)
-    width, height, depth = image.shape
+    height, width, depth = image.shape
+
     print("Image Resolution: ", width, "x", height)
     print("Generating Data image: ", fileName)
 
@@ -38,18 +44,30 @@ for fileName in files:
     # ================================== Generate Contours ==================================
     y = range(image.shape[0])
     x = range(image.shape[1])
-    X, Y = np.meshgrid(x, y)
+
+    # Rotate image to correspond to the same rotation as the contour map
     rotated = cv.rotate(image, cv.ROTATE_180)
     rotated = cv.flip(rotated, 1)
 
-    fig = plt.figure()
-    plot = plt.contour(X, Y, rotated[:, :, 0], 50)
+    # Pre-set figure size to correspond to the image's size with DPI
+    fig = plt.figure(figsize=(width/imagedpi[0], height/imagedpi[0]), dpi=imagedpi[0])
+
+    # Remove the axis information to correspond the entire plot's size as the image size
     plt.axis('off')
     ax = plt.gca()
     ax.get_xaxis().set_visible(False)
     ax.get_yaxis().set_visible(False)
 
-    plt.savefig(outputDirectory + "contours/" + "Contour_" + fileName, bbox_inches="tight", pad_inches=0)
+    # Tighten the layout and make the padding = 0 to correspond the image size
+    plt.tight_layout(pad=0)
+
+    # Plot the contours as a 3D graph in a 2D form
+    X, Y = np.meshgrid(x, y)
+    plot = plt.contour(X, Y, rotated[:, :, 0], 50)
+
+    plt.savefig(outputDirectory + "contours/" + "Contour_" + fileName)
+    fig.clf()
+
     # ================================== CREATE 3D IMAGE PLOT FIGURE ==================================
     fig = plt.figure(3)
 
@@ -64,7 +82,7 @@ for fileName in files:
     plt.title("Top Down View of the 3D Image")
     plt.savefig(outputDirectory+"3D/"+"3D_" +fileName, bbox_inches="tight")
 
-
+    fig.clf()
     # ================================== SOBEL DERIVATIVES OF IMAGE ==================================
     scale = 1
     delta = 0
@@ -82,7 +100,6 @@ for fileName in files:
 
     grad = cv.addWeighted(abs_grad_x, 0.5, abs_grad_y, 0.5, 0)
 
-    cv.waitKey(0)
     cv.imwrite(outputDirectory+"sobel/"+"Sobel_" + fileName, grad)
 
     # ================================== HISTOGRAMS OF IMAGE  ==================================
@@ -102,3 +119,4 @@ for fileName in files:
 
         plt.savefig(outputDirectory+"histograms/" + 'Histogram_' + fileName)
     print("Generating Data image: ", fileName, " - done\n")
+    fig.clf()
