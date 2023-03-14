@@ -70,10 +70,10 @@ class Backend:
 
 
     def verify(self):
+        self.numFiles = len(self.files)
         if not disableProgressBar:
             global bufferedString
             bufferedString = "Verifying Files...\n"
-            self.numFiles = len(self.files)
             self.numProcesses = self.numFiles + self.numFiles * 2
             setMaxLimit(self.numProcesses)
 
